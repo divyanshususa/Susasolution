@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign up</h2>
+    <form action="/signup" method="post" enctype="multipart/form-data">
+      <label for="userRole">User Role:</label>
+      <select id="userRole" name="userRole">
+        <option value="Individual">Individual</option>
+        <option value="Company">Company</option>
+        <option value="Partner">Partner</option>
+      </select>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <label for="panCardImage">PAN Card Image:</label>
+      <input type="file" id="panCardImage" name="panCardImage" required>
+      <br><br>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</body>
+</html>
