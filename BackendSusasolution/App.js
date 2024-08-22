@@ -5,7 +5,7 @@ const cors = require("cors");
 const connectDB = require("./config");
 const userController = require("./Controller/User");
 const projectRoute = require("./Router/project");
-const userroutes = require('./Router/User')
+const userroutes = require('./Router/User');
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); // parse application/json
