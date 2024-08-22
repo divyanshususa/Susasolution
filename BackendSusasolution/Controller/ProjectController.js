@@ -1,5 +1,5 @@
-// Project Controller (controllers/ProjectController.js)
-const Project = require("../models/Project");
+
+const Project = require("../Models/Project");
 const upload = require("../Middleware/upload");
 const fs = require('fs')
  const path = require("path"); 

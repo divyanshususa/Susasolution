@@ -1,4 +1,4 @@
-// Multer Middleware (middlewares/upload.js)
+
 const multer = require("multer");
 
 const storage = multer.diskStorage({
