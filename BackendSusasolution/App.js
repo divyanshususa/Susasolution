@@ -5,7 +5,7 @@ const cors = require("cors");
 const connectDB = require("./config");
 const userController = require("./Controller/User");
 const projectRoute = require("./Router/project");
-const userroutes = require('./Router/User');
+const userroutes = require('./Router/User'); 
 const PORT = process.env.PORT || 5000;
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); // parse application/json
@@ -24,6 +24,6 @@ app.use("/api/projects", projectRoute);
 
 
 app.listen(PORT, () => {
-  console.log("Server started on port 3000");
+  console.log(`Server started on port ${PORT}` );
 });
  
