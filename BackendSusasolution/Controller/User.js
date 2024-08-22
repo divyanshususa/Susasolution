@@ -1,4 +1,4 @@
-const User = require("../models/Signup");
+const User = require("../Models/Signup");
 const fs = require("fs");
 const path = require("path");
 
